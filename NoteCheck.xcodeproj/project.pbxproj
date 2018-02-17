@@ -18,6 +18,11 @@
 		237D08D1200146F400DF8235 /* NoteCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D08D0200146F400DF8235 /* NoteCheckUITests.swift */; };
 		237D08E0200147CA00DF8235 /* CheckNoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D08DF200147CA00DF8235 /* CheckNoteModel.swift */; };
 		237D08E32001498C00DF8235 /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D08E22001498C00DF8235 /* NotesManager.swift */; };
+		23A6690120385B4D000E1751 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6690020385B4D000E1751 /* IntentHandler.swift */; };
+		23A6690520385B4D000E1751 /* NotesCheckSiriKit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 23A668FE20385B4C000E1751 /* NotesCheckSiriKit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23A6690C20386382000E1751 /* CheckNoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D08DF200147CA00DF8235 /* CheckNoteModel.swift */; };
+		23A6690D20386385000E1751 /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D08E22001498C00DF8235 /* NotesManager.swift */; };
+		32AD0318C8F53F97B5B8B020 /* Pods_NotesCheckSiriKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3366C18F25C325DE78B6EDAC /* Pods_NotesCheckSiriKit.framework */; };
 		56E116F0AF796CE6BFC4B66B /* Pods_NoteCheckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B82AF8E439C504D69F4952 /* Pods_NoteCheckUITests.framework */; };
 		BD17E331B5AD85E5004B54AA /* Pods_NoteCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 108A159AAD7E3888BE271EB8 /* Pods_NoteCheckTests.framework */; };
 		E2EC7314A330E1050EF6EB4D /* Pods_NoteCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBCB99A377D5AA162E1BF96 /* Pods_NoteCheck.framework */; };
@@ -38,7 +43,28 @@
 			remoteGlobalIDString = 237D08AC200146F400DF8235;
 			remoteInfo = NoteCheck;
 		};
+		23A6690320385B4D000E1751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237D08A5200146F400DF8235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A668FD20385B4C000E1751;
+			remoteInfo = NotesCheckSiriKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23A6690920385B4D000E1751 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				23A6690520385B4D000E1751 /* NotesCheckSiriKit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		108A159AAD7E3888BE271EB8 /* Pods_NoteCheckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteCheckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,12 +85,18 @@
 		237D08D2200146F400DF8235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		237D08DF200147CA00DF8235 /* CheckNoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckNoteModel.swift; sourceTree = "<group>"; };
 		237D08E22001498C00DF8235 /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		23A668FE20385B4C000E1751 /* NotesCheckSiriKit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotesCheckSiriKit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A6690020385B4D000E1751 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		23A6690220385B4D000E1751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3366C18F25C325DE78B6EDAC /* Pods_NotesCheckSiriKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotesCheckSiriKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1A49851AF97D8F96E71218 /* Pods-NotesCheckSiriKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesCheckSiriKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotesCheckSiriKit/Pods-NotesCheckSiriKit.debug.xcconfig"; sourceTree = "<group>"; };
 		5AFC22836203B88112CF53B4 /* Pods-NoteCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheckTests/Pods-NoteCheckTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DBCB99A377D5AA162E1BF96 /* Pods_NoteCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B82AF8E439C504D69F4952 /* Pods_NoteCheckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteCheckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		904D9C9ED119B26C526F4782 /* Pods-NoteCheckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheckTests/Pods-NoteCheckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE7A67AB58DEB718F641F029 /* Pods-NoteCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheck/Pods-NoteCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		C1B8C3F505D45E6D755A9E19 /* Pods-NoteCheckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheckUITests/Pods-NoteCheckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6BAFFBCA8E332B2C9689C8F /* Pods-NotesCheckSiriKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotesCheckSiriKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotesCheckSiriKit/Pods-NotesCheckSiriKit.release.xcconfig"; sourceTree = "<group>"; };
 		D57D119FC2C2B35AFB023EF3 /* Pods-NoteCheckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheckUITests/Pods-NoteCheckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC20ED81CA6ED7F7494DA259 /* Pods-NoteCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteCheck/Pods-NoteCheck.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +126,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23A668FB20385B4C000E1751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AD0318C8F53F97B5B8B020 /* Pods_NotesCheckSiriKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				237D08AF200146F400DF8235 /* NoteCheck */,
+				23A668FF20385B4D000E1751 /* NotesCheckSiriKit */,
 				237D08C4200146F400DF8235 /* NoteCheckTests */,
 				237D08CF200146F400DF8235 /* NoteCheckUITests */,
 				237D08AE200146F400DF8235 /* Products */,
@@ -115,6 +156,7 @@
 				237D08AD200146F400DF8235 /* NoteCheck.app */,
 				237D08C1200146F400DF8235 /* NoteCheckTests.xctest */,
 				237D08CC200146F400DF8235 /* NoteCheckUITests.xctest */,
+				23A668FE20385B4C000E1751 /* NotesCheckSiriKit.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +212,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		23A668FF20385B4D000E1751 /* NotesCheckSiriKit */ = {
+			isa = PBXGroup;
+			children = (
+				23A6690020385B4D000E1751 /* IntentHandler.swift */,
+				23A6690220385B4D000E1751 /* Info.plist */,
+			);
+			path = NotesCheckSiriKit;
+			sourceTree = "<group>";
+		};
 		5D62D79B6D781F8A10DF371B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +230,8 @@
 				5AFC22836203B88112CF53B4 /* Pods-NoteCheckTests.release.xcconfig */,
 				D57D119FC2C2B35AFB023EF3 /* Pods-NoteCheckUITests.debug.xcconfig */,
 				C1B8C3F505D45E6D755A9E19 /* Pods-NoteCheckUITests.release.xcconfig */,
+				4C1A49851AF97D8F96E71218 /* Pods-NotesCheckSiriKit.debug.xcconfig */,
+				C6BAFFBCA8E332B2C9689C8F /* Pods-NotesCheckSiriKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -189,6 +242,7 @@
 				5DBCB99A377D5AA162E1BF96 /* Pods_NoteCheck.framework */,
 				108A159AAD7E3888BE271EB8 /* Pods_NoteCheckTests.framework */,
 				63B82AF8E439C504D69F4952 /* Pods_NoteCheckUITests.framework */,
+				3366C18F25C325DE78B6EDAC /* Pods_NotesCheckSiriKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,10 +260,12 @@
 				237D08AB200146F400DF8235 /* Resources */,
 				360ACD154E604B307A922EBA /* [CP] Embed Pods Frameworks */,
 				23CBC13EC9D47228237F32CE /* [CP] Copy Pods Resources */,
+				23A6690920385B4D000E1751 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				23A6690420385B4D000E1751 /* PBXTargetDependency */,
 			);
 			name = NoteCheck;
 			productName = NoteCheck;
@@ -258,6 +314,25 @@
 			productReference = 237D08CC200146F400DF8235 /* NoteCheckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		23A668FD20385B4C000E1751 /* NotesCheckSiriKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A6690820385B4D000E1751 /* Build configuration list for PBXNativeTarget "NotesCheckSiriKit" */;
+			buildPhases = (
+				9E360222F5292C4F55153733 /* [CP] Check Pods Manifest.lock */,
+				23A668FA20385B4C000E1751 /* Sources */,
+				23A668FB20385B4C000E1751 /* Frameworks */,
+				23A668FC20385B4C000E1751 /* Resources */,
+				D44420F6ABB88E2D03059516 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotesCheckSiriKit;
+			productName = NotesCheckSiriKit;
+			productReference = 23A668FE20385B4C000E1751 /* NotesCheckSiriKit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,6 +357,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 237D08AC200146F400DF8235;
 					};
+					23A668FD20385B4C000E1751 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 237D08A8200146F400DF8235 /* Build configuration list for PBXProject "NoteCheck" */;
@@ -300,6 +379,7 @@
 				237D08AC200146F400DF8235 /* NoteCheck */,
 				237D08C0200146F400DF8235 /* NoteCheckTests */,
 				237D08CB200146F400DF8235 /* NoteCheckUITests */,
+				23A668FD20385B4C000E1751 /* NotesCheckSiriKit */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +403,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		237D08CA200146F400DF8235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A668FC20385B4C000E1751 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,6 +520,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteCheckTests/Pods-NoteCheckTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9E360222F5292C4F55153733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotesCheckSiriKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B53650437E21D3A5EEBAD2A8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +569,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44420F6ABB88E2D03059516 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotesCheckSiriKit/Pods-NotesCheckSiriKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5EA6192DA3838C49C7E7EFC /* [CP] Copy Pods Resources */ = {
@@ -513,6 +633,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23A668FA20385B4C000E1751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A6690C20386382000E1751 /* CheckNoteModel.swift in Sources */,
+				23A6690D20386385000E1751 /* NotesManager.swift in Sources */,
+				23A6690120385B4D000E1751 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -525,6 +655,11 @@
 			isa = PBXTargetDependency;
 			target = 237D08AC200146F400DF8235 /* NoteCheck */;
 			targetProxy = 237D08CD200146F400DF8235 /* PBXContainerItemProxy */;
+		};
+		23A6690420385B4D000E1751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A668FD20385B4C000E1751 /* NotesCheckSiriKit */;
+			targetProxy = 23A6690320385B4D000E1751 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -659,6 +794,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE7A67AB58DEB718F641F029 /* Pods-NoteCheck.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X44DPG9938;
@@ -675,6 +811,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC20ED81CA6ED7F7494DA259 /* Pods-NoteCheck.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X44DPG9938;
@@ -757,6 +894,38 @@
 			};
 			name = Release;
 		};
+		23A6690620385B4D000E1751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1A49851AF97D8F96E71218 /* Pods-NotesCheckSiriKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X44DPG9938;
+				INFOPLIST_FILE = NotesCheckSiriKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Assaf.com.NoteCheck.NotesCheckSiriKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23A6690720385B4D000E1751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6BAFFBCA8E332B2C9689C8F /* Pods-NotesCheckSiriKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X44DPG9938;
+				INFOPLIST_FILE = NotesCheckSiriKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Assaf.com.NoteCheck.NotesCheckSiriKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -792,6 +961,15 @@
 			buildConfigurations = (
 				237D08DC200146F400DF8235 /* Debug */,
 				237D08DD200146F400DF8235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A6690820385B4D000E1751 /* Build configuration list for PBXNativeTarget "NotesCheckSiriKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A6690620385B4D000E1751 /* Debug */,
+				23A6690720385B4D000E1751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
